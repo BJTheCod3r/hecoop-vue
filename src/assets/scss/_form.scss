@@ -1,0 +1,54 @@
+@use 'sass:math';
+
+input {
+  &.form-control {
+    background-color: $white !important;
+    color: $input-color;
+    transition: $transition;
+    border: $input-border-1;
+    &:focus {
+      border-top-left-radius: $border-radius;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.form-container {
+  h1 {
+    font-weight: 600;
+  }
+  .form-group {
+    input.form-control {
+      border-radius: math.div($size-10, 2);
+      height: 48px;
+      font-size: $medium-size;
+      transition: $transition;
+      @include media-breakpoint-down(sm) {
+        height: 40px;
+      }
+      &:focus {
+        border: $input-border-focus;
+        border-top-left-radius: $size-18;
+      }
+    }
+    label {
+      @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.with-icon {
+  position: relative;
+  .-icon {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    opacity: 0.7;
+    @include media-breakpoint-down(sm) {
+      top: 9px;
+    }
+  }
+}

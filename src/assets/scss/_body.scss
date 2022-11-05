@@ -1,0 +1,43 @@
+body,
+html {
+  font-family: 'Manrope', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+  transition: $transition;
+}
+
+.dashboard-content {
+  padding: $dashboard-content-padding;
+}
+
+a,
+.btn,
+button {
+  transition: $transition;
+}
+
+h1 {
+  @include media-breakpoint-down(sm) {
+    font-size: 1.5rem;
+  }
+}
+h2 {
+  @include media-breakpoint-down(md) {
+    font-size: 1.3rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.1rem;
+  }
+}
+
+

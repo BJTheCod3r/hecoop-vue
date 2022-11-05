@@ -1,0 +1,33 @@
+$white: #ffffff;
+$black: #000000;
+$grey: #EFF2F6;
+$blue-tint-4: #DFEFFE;
+$dark-blue: #001236;
+$deep-blue:#08569D;
+$faint-blue: #556D9E;
+
+$primary-color: #08569d;
+$secondary-color: #ee8162;
+$tertiary-color: #5DAEF8;
+$main-body-bg: #EDF2F7;
+
+$transition: 0.2s ease-in-out;
+
+$input-border-1: 1px solid $grey;
+$input-border-focus: 1px solid $tertiary-color;
+$dashboard-content-padding: 0 2.96%;
+
+$medium-size: 14px;
+$size-10: 10px;
+$size-18: 18px;
+
+$breakpoint-sm: 768px;
+
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "tertiary": $tertiary-color,
+  "dark-blue": $dark-blue,
+  "light-blue": $blue-tint-4,
+  "faint-blue": $faint-blue
+);

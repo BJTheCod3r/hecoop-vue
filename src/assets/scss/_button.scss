@@ -1,0 +1,17 @@
+button {
+  &.btn {
+    height: 45px;
+    border: none;
+    font-size: 14px;
+    box-shadow: none !important;
+    font-weight: 500;
+    border-radius: 5px;
+    &:hover {
+      transform: scale(1.02);
+    }
+    &:disabled,
+    &.disabled {
+      cursor: not-allowed;
+    }
+  }
+}
